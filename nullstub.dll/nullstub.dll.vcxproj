@@ -46,7 +46,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup>
     <TargetName>nullstub</TargetName>
-    <OutDir>$(SolutionDir)Component\nullstub\$(PEMachine)\</OutDir>
+    <OutDir>$(SolutionDir)WaffleNightly\Component\nullstub\$(PEMachine)\</OutDir>
     <IncludePath>$(SolutionDir)SDK\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)SDK\Lib\$(PEMachine);$(LibraryPath)</LibraryPath>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
