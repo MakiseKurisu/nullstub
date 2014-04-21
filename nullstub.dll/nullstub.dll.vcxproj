@@ -72,7 +72,7 @@
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>DllMain</EntryPointSymbol>
       <ImportLibrary>$(SolutionDir)SDK\Lib\$(PEMachine)\$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>Kernel32.lib;User32.lib</AdditionalDependencies>
+      <AdditionalDependencies>Waffle.common.1.0.lib;;Kernel32.lib;User32.lib</AdditionalDependencies>
       <ModuleDefinitionFile>nullstub.def</ModuleDefinitionFile>
       <AdditionalOptions>/ignore:4197 %(AdditionalOptions)</AdditionalOptions>
       <GenerateDebugInformation Condition="'$(Configuration)'=='Debug'">true</GenerateDebugInformation>

@@ -1,3 +1,5 @@
 NAME    nullstub.dll
 EXPORTS
     ComponentInit
+
+    DetourMessageBoxA
