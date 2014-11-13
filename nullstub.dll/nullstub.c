@@ -1,8 +1,8 @@
-#define WAFFLE_COMPONENT_BUILD
+#define _BUILD_WAFFLE_COMPONENT_
 #include <waffle.h>
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 
-LIBRARY_EXPORT int WINAPI DetourMessageBoxA(
+WAFFLE_COMPONENT_FUNCTION int WINAPI DetourMessageBoxA(
     _In_opt_    HWND hWnd,
     _In_opt_    LPCSTR lpText,
     _In_opt_    LPCSTR lpCaption,
@@ -18,7 +18,7 @@ LIBRARY_EXPORT int WINAPI DetourMessageBoxA(
     return BackupMessageBoxA(hWnd, "I'm in charge!", "Waffle", uType);
 }
 
-LIBRARY_EXPORT SIZE_T WINAPI ComponentInit(
+WAFFLE_COMPONENT_FUNCTION SIZE_T WINAPI ComponentInit(
     _In_    LPWAFFLE_PROCESS_SETTING lpstProcessSetting
     )
 {
